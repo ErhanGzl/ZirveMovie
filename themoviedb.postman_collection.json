@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "19c0baae-ee02-475b-b6e5-e31511a57698",
+		"name": "themoviedb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Login Create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie List By Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/discover/movie?api_key=0e65d188516aa95835aafa20326bc72f&language=tr-TR&sort_by=popularity.desc&page=2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"discover",
+						"movie"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "0e65d188516aa95835aafa20326bc72f"
+						},
+						{
+							"key": "language",
+							"value": "tr-TR"
+						},
+						{
+							"key": "sort_by",
+							"value": "popularity.desc"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SetMoviePointsComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDAyOTM0NzksImV4cCI6MTYwMDI5Mzc3OSwiYXVkIjoid3d3LnppcnZleWF6aWxpbS5jb20ifQ.I9GyBOGwKROVjdDzT7PJQdl9UHJFlF3ha4A3rIh2Hpc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44318/api/Movie/SetMoviePointsComment?Points=10&Comment=20&id=337401",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Movie",
+						"SetMoviePointsComment"
+					],
+					"query": [
+						{
+							"key": "Points",
+							"value": "10"
+						},
+						{
+							"key": "Comment",
+							"value": "20"
+						},
+						{
+							"key": "id",
+							"value": "337401"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMoviePointsComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDAyOTM0NzksImV4cCI6MTYwMDI5Mzc3OSwiYXVkIjoid3d3LnppcnZleWF6aWxpbS5jb20ifQ.I9GyBOGwKROVjdDzT7PJQdl9UHJFlF3ha4A3rIh2Hpc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44318/api/Movie/SetMoviePointsComment?Points=10&Comment=20&id=337401",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Movie",
+						"SetMoviePointsComment"
+					],
+					"query": [
+						{
+							"key": "Points",
+							"value": "10"
+						},
+						{
+							"key": "Comment",
+							"value": "20"
+						},
+						{
+							"key": "id",
+							"value": "337401"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDAyOTcxMDQsImV4cCI6MTYwMDI5NzQwNCwiYXVkIjoid3d3LnppcnZleWF6aWxpbS5jb20ifQ.RdXJwnYs9-niIeRTNpRpq82hb_MbR2eyk-V3v5I89aA"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44318/api/Movie/SendMail?MailAdress=erhan_guzl@hotmail.com&id=337401",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Movie",
+						"SendMail"
+					],
+					"query": [
+						{
+							"key": "MailAdress",
+							"value": "erhan_guzl@hotmail.com"
+						},
+						{
+							"key": "id",
+							"value": "337401"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

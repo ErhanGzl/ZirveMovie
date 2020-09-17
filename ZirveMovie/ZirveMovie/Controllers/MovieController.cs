@@ -98,7 +98,7 @@ namespace ZirveMovie.Controllers
                 sc.Port = 587;
                 sc.Host = "smtp.live.com";
                 sc.EnableSsl = true;
-                sc.Credentials = new NetworkCredential("Zirvemovie@hotmail.com", "Zirve.123456");
+                sc.Credentials = new NetworkCredential("Zirvemovie@hotmail.com", "******");
                 MailMessage mail = new MailMessage();
 
                 mail.From = new MailAddress("Zirvemovie@hotmail.com", "Zirve Film");
